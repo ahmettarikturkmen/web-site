@@ -1,0 +1,538 @@
+/* Genel stiller */
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(255, 234, 227);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+h1 {
+    color: coral;
+    border-bottom: 2px solid coral;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+.text-white {
+    color: #fff ;
+}
+
+.text-center {
+    text-align: center ;
+}
+
+/* Header stilleri */
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 8px 16px;
+}
+
+/* Slider stilleri */
+
+.carousel-item img {
+    max-width: 70%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* hakkımda stilleri */
+.hakkimda {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture img {
+    max-width: 200px; /* Fotoğraf maksimum genişliği */
+    border-radius: 50%; /* Dairesel köşeler */
+    margin-right: 50px; /* Fotoğraf ile metin arasındaki boşluk */
+}
+.profile-picture {
+    margin-top: 20px; 
+    margin-left: 20px;
+}
+
+.bio{
+    margin-top: 80px;
+    margin-right: 90px; 
+}
+.bio h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+   
+}
+
+.bio p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .hakkimda {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 15px;
+    }
+
+    .profile-picture {
+        order: -1; /* Resmi metnin üzerine alır */
+        margin-bottom: 20px;
+    }
+}
+
+/* Ozgecmis stilleri */
+#OzgecmisCv {
+    position: relative;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container_cv {
+    position: relative;
+    width: 100%;
+    max-width: 1150px;
+    min-height: 1000px;
+    background-color:rgb(255, 234, 227);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.container_cv .left_Side {
+    position: relative;
+    background-color: rgb(56,60,68);
+    padding: 40px;
+}
+
+.container_cv .right_Side {
+    position: relative;
+    background-color: rgb(255, 234, 227);
+    padding: 40px;
+
+}
+
+.ProfilYazisi {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.ProfilYazisi .imgbx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    overflow: hidden;
+}
+
+.ProfilYazisi .imgbx img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ProfilYazisi h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.ProfilYazisi h2 span {
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.iletisimbilgileri {
+    padding-top: 2%;
+}
+
+.iletisimtext {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 5%;
+}
+
+.iletisimbilgileri ul {
+    position: relative;
+
+}
+
+.iletisimbilgileri ul li {
+    list-style: none;
+    margin: 2% 0;
+    
+}
+
+.iletisimbilgileri ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: coral;
+}
+
+.iletisimbilgileri ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.egitimtext {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 5%;
+}
+
+.egitimbilgileri li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.egitimbilgileri h5 {
+    color: coral;
+    font-weight: 500;
+}
+
+.egitimbilgileri h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.egitimbilgileri h6 {
+    color: #fff;
+    
+}
+
+.dilbilgileri li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.diltext {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 5%;
+    
+}
+
+.dilbilgileri h6 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 5%;
+    
+}
+
+.title2 {
+    margin-top: 6%;
+    color: coral;
+}
+
+.yetenekler .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: left;
+    align-items: center;
+}
+
+.yetenekler .box h4 {
+    text-align: left;
+    text-transform: uppercase;
+    color: #081921;
+    font-weight: 600;
+}
+
+.yetenekler .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+}
+
+.yetenekler .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: coral;
+}
+.sertifika {
+    max-width: 80%;
+    height: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1; /* Resimlerin esnekliğini sağlar, ekrana göre otomatik olarak boyutlanır */
+    margin: 5px; /* Resimler arasında boşluk bırakır */
+}
+
+.ilgiAlanlari ul {
+    display: grid;
+}
+
+.ilgiAlanlari ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 2% 0;
+}
+
+.ilgiAlanlari ul li i {
+    color: coral;
+    font-size: 20px;
+    width: 20px;
+    margin-right: 3%;
+}
+
+@media(max-width:1000px) {
+    .container_cv {
+        margin: 0px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.Link {
+    color: white;
+}
+/*Şehrim sayfası stilleri */
+
+.Bursa_tanitim {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.BursaBaslik{
+    margin-top: 2%;
+    text-align: center;
+}
+
+.container_turistik {
+    display: flex;
+}
+
+.turistik_picture {
+    width: 50px;
+    height: 50px;
+    flex: 0 0 30%; /* Bu elemanın boyutunu esnek tutar */
+}
+
+.turistik_foto {
+    width: 380px; /* İstediğiniz genişlik değeri */
+    height: auto; /* Genişliğe göre otomatik olarak yükseklik ayarlaması */
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.turistik_yazi {
+    margin-top: 60px;
+    margin-right: 90px;
+    margin-left: 90px;
+    flex: 1; /* Bu elemanın boyutunu esnek tutar */
+}
+
+@media (max-width: 768px) {
+    .container_turistik {
+        flex-direction: column;
+    }
+
+    .turistik_picture {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .turistik_yazi {
+        order: 2;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* İlgi alanlarım stilleri */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1 0 50%; /* Sütunların yarısını kaplayacak şekilde ayarlandı */
+}
+
+.card {
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .col {
+        flex: 1 0 100%; /* Sütunların tamamını kaplayacak şekilde ayarlandı */
+    }
+}
+
+.containerilgi {
+    max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  }
+  
+  #cityInput {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  #searchBtn {
+    padding: 10px 20px;
+    background-color: rgb(56,60,68);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #searchBtn:hover {
+    background-color: coral;
+  }
+
+
+
+/* Footer stilleri */
+footer {
+    margin-top: 48px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* İletişim formu stilleri */
+.contact-info {
+    background-color: #f8fafa;
+    padding: 24px;
+    border-radius: 4px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 8px;
+}
+/* İletişim formu php stilleri */
+table {
+    width: 50%;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+th, td {
+    width: 50%;
+}
+
+/* Giriş yap sayfası stilleri */
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(56,60,68);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: coral;
+}
+
+button:active {
+    background-color: coral;
+}
+
+
+/* Form stilleri */
+#contactForm .form-group label {
+    font-weight: bold;
+}
+
+#contactForm .form-control {
+    border-radius: 0;
+}
+
+#contactForm button.btn-primary {
+    border-radius: 0;
+    width: 100%;
+}

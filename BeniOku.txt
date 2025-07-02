@@ -1,0 +1,27 @@
+PROJE AMACI:
+
+Kendimi ve memleketim olan Bursa'yı tanıtan kişisel bir web sitesi uygulaması geliştirmek.
+
+
+
+PROJE İÇERİĞİ:
+
+
+Hakkımda Sayfası: Bu sayfa Ana sayfa şeklinde olacak ve kendi hayatım hakkında bilgiler içerecek.
+
+Özgeçmiş Sayfası: CV niteliğinde bir sayfa olacak ve eğitim öğretim bilgilerimi içerecek.
+
+Mirasımız: Şehrim olan Bursa hakkında tarihi ve kültürel bilgiler içermekle beraber gezilecek turistik yerler fotoğraflarla zenginleştirilerek sunacağım.
+
+Takımım: Bursaspor hakkında bilgilendirme yapacağım.
+
+İlgi alanlarım: İlgi alanlarım ve yapmaktan zevk aldığım hobilerimden bahsedeceğim. Bir API servisinden veri alınıp göstereceğim. 
+
+Login Sayfası: Kullanıcının bilgilerinin girildiği ve bilgilerini kontrol edip ona göre yönlendirmeler yapan bir giriş sayfası olacak. 
+
+İletişim Sayfası: Gerekli form elamanlarını içeren bir iletişim sayfası olacaktır. Gerekli kontrol işlemleriyle denetleyeceğim.
+
+Sayfam, fotoğraflar ve linkler ile zenginleştirilmiş kendimi tanıttığım aynı zamanda memleketim hakkında bilgilendirici bir sayfa olacak.
+
+Projemde HTML,CSS,BOOTSTRAP,PHP,JAVASCRİPT teknolojilerinden yararlanacağım.
+

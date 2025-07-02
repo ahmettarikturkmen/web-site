@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Ahmet Tarık</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ikonlar CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Ahmet Tarık Türkmen</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Hakkımda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mirasimiz.html">Bursa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="takimim.html">Takımım</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ilgialanlarim.html">İlgi&nbsp;Alanlarım</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="iletisim.html">İletişim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Giriş&nbsp;Yap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="iletisim" class="py-5">
+        <div class="container">
+            <h2 class="mb-4">İletişim</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    
+                    <div id="app">
+                        <form id="contactForm" method="post" action="iletisim_Form.php">
+                            <div class="form-group">
+                                <label for="name">Adı Soyadı:</label>
+                                <input type="text" class="form-control" placeholder="Adınız..." id="name" name="name" v-model="name" >
+                            </div>
+                            <div class="form-group">
+                                <label>Cinsiyet:</label>
+                                <div>
+                                    <input type="radio" id="male" value="Erkek" v-model="gender" name="gender">
+                                    <label for="male">Erkek</label>
+                                    <input type="radio" id="female" value="Kadın" v-model="gender" name="gender">
+                                    <label for="female">Kadın</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E posta Adresi:</label>
+                                <input type="email" class="form-control" placeholder="------@--.com" id="email" name="email" v-model="email" >
+                            </div>
+                            <div class="form-group">
+                                <label for="category">Kategori:</label>
+                                <select class="form-control" id="category" v-model="category" name="category">
+                                    <option disabled value="">Bir kategori seçin</option>
+                                    <option value="Öneri">Öneri</option>
+                                    <option value="Şikayet">Şikayet</option>
+                                    <option value="Diğer">Diğer</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mesaj:</label>
+                                <textarea class="form-control" placeholder="Mesajınız..." name="message" v-model="message" rows="5" ></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary" @click="validateForm">Gönder</button>
+                            <button type="button" class="btn btn-danger" @click="resetForm">Formu Sıfırla</button>
+                        </form>
+                    </div>
+                    
+
+
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="contact-info">
+                        <h3 class="mb-3">İletişim Bilgileri</h3>
+                        <p>Benimle iletişime geçmek için aşağıdaki bilgileri kullanabilirsiniz:</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Adres:</strong> Bursa, Türkiye</li>
+                            <li><strong>Telefon:</strong> (0) 535-349-5310</li>
+                            <li><strong>E-posta:</strong> tarik.turkmen@ogr.sakarya.edu.tr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>Web Teknolojileri &nbsp; -  &nbsp;&nbsp; Ahmet Tarık Türkmen &nbsp; -  &nbsp;&nbsp; 2024</p>
+            <p>
+                <a href="https://github.com/ahmettarikturkmen" class="Link"><i class="fa-brands fa-github">&nbsp;</i>Github</a>&nbsp;
+                <a href="https://www.linkedin.com/in/ahmet-tar%C4%B1k-8a798b308/" class="Link"><i class="fa-brands fa-linkedin">&nbsp;</i>Linkedin</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Sayfa küçültüldüğündeki açılır kapanır nav bar menü ve slider için bootstrap js ve jquery js kütüphanesi-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     <!--Vue.js form kontrolu-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                name: '',
+                gender: '',
+                email: '',
+                category: '',
+                message: ''
+            },
+            methods: {
+                validateForm() {
+                    if (!this.name || !this.gender || !this.email || !this.category || !this.message) {
+                        alert('Lütfen tüm alanları doldurunuz.');
+                        return;
+                    }
+
+                    if (!this.validateEmail(this.email)) {
+                        alert('Lütfen geçerli bir e-posta adresi giriniz.');
+                        return;
+                    }
+
+                    // Form geçerliyse, formu gönder
+                    document.getElementById('contactForm').submit();
+                    this.resetForm();
+                },
+                resetForm() {
+                    this.name = '';
+                    this.gender = '';
+                    this.email = '';
+                    this.category = '';
+                    this.message = '';
+                },
+                validateEmail(email) {
+                    // Basit bir e-posta doğrulama işlemi
+                    const re = /\S+@\S+\.\S+/;
+                    return re.test(email);
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
